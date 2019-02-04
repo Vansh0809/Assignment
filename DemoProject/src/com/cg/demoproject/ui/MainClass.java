@@ -57,11 +57,19 @@ public class MainClass {
 		System.out.println(student1);
 		
 		System.out.println("---------------------------------------------------------------");
-		Student student2=new JavaStudent(102,"Asha",54.98f,Divisions.C,LocalDate.of(1987,Month.OCTOBER,20),"Java");
+		Student student2=new Student(102,"Asha",45.98f,Divisions.B,LocalDate.of(1988,Month.NOVEMBER,22));
 		
-		System.out.println(student2);
+		Student student3=student1;
+		
+		System.out.println(student1.hashCode());
+		System.out.println(student2.hashCode());
+		//System.out.println(student3.hashCode());
+		System.out.println("Objects are equal: " + student1.equals(student2));
+		System.out.println(student1.hashCode());
+		System.out.println(student2.hashCode());
 		
 		
+		//Student s=new JavaStudent();
 		
 	
 	}
